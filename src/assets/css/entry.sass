@@ -1,0 +1,81 @@
+// 完善信息按钮
+.entry-edit-button
+  margin-left: auto
+  min-width: 120px
+
+// 封面图片
+.cover
+  width: 225px
+  height: 320px
+  border-radius: 6px
+  overflow: hidden
+// 封面没图片链接时的样式
+// 除了entry页面其他页面页可能会用到，因此不放在.media里面
+.no-cover
+  width: 225px
+  height: 320px
+  text-align: center
+  line-height: 320px
+  border: 1px dashed #d9d9d9
+  border-radius: 6px
+  overflow: hidden
+  background-color: white
+
+// 条目主要信息块
+.entry-main-info
+  width: 68% !important
+  box-sizing: border-box
+  padding-right: 20px
+  border-right: 1px solid #DCDFE6
+  /* 下面的样式从bootstrap拷贝过来的 */
+  .media
+    display: flex
+    align-items: flex-start
+    .media-body
+      flex: 1
+    .cover, .no-cover
+      margin-right: 1rem !important
+// 条目侧边
+.entry-aside-info
+  width: 29% !important
+  box-sizing: border-box
+  padding-left: 20px
+
+// 简介
+.intro
+  font-size: 13px
+  white-space: pre-wrap
+  word-wrap: break-word
+  margin: 0 auto
+
+// 官网链接
+.official-url
+  color: #303133
+
+// 条目幻灯片列表
+.entry-swiper
+  width: 100%
+  .swiper-box
+    display: flex
+    align-items: flex-end
+    .swiper-box-item
+      .entry-swiper-text
+        text-align: center
+        font-size: 14px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      // 条目幻灯片列表中的图片
+      .entry-swiper-image
+        width: 100%
+        border-radius: 6px
+      // cast组件的特殊样式
+      .entry-swiper-person-image
+        @extend .entry-swiper-image
+        margin-top: 1rem
+      .entry-swiper-placeholder
+        @extend .entry-swiper-image
+        visibility: hidden
+      .entry-swiper-person-placeholder
+        @extend .entry-swiper-placeholder
+        margin-top: 1rem

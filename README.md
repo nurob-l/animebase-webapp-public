@@ -1,0 +1,3 @@
+# animebase-webapp
+提供web客户端，将数据服务器与app服务器分开
+本服务器采用ssr和csr混合使用，需要SEO的页面采用ssr，其余采用csr

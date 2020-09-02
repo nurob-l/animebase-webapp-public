@@ -1,0 +1,25 @@
+$main-width: 1160px
+
+@mixin main-content
+  width: $main-width
+  margin: 0 auto
+  
+// 页面
+.view
+  @include main-content
+  // position: relative
+
+// 主标题
+.main-title
+  font-size: 20px
+  margin-right: auto
+// 标题
+.title
+  font-size: 16px
+
+// 查看更多链接
+.see-more
+  align-self: center
+.see-more-disable
+  align-self: center
+  color: #C0C4CC
